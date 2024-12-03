@@ -99,7 +99,7 @@ p {
     margin: 28px 0 0 0;
     width: 150px;
     display: inline-block;
-    background-color: gray;
+    background-color: rgb(156, 156, 156);
     text-align: center;
     color: black;
     padding: 12px 0;
