@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Web Educativa</title>
+    <link rel="stylesheet" href="../css/proyecto2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Plataforma de Cursos en Línea</h1>
+        <div id="usuarioRegistrado"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><button id="btnAbrirModal">Registrarse</button></li>
+                <li><button id="borrarDatos">Cerrar sesion</button></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="app">
+        <div id="modalRegistro" class="modal">
+            <div class="modal-content">
+                <span id="cerrarModal" class="close">&times;</span>
+                <h2>Registro de Usuario</h2>
+                <form id="formRegistro">
+                    <label for="nombre">Nombre:</label>
+                    <div class="input">
+                        <input type="text" id="nombre">
+                        <div id="errorNombre"></div>
+                    </div>
+                    <label for="email">Correo Electrónico:</label>
+                    <div class="input">
+                        <input type="email" id="email">
+                        <div id="errorEmail"></div>
+                    </div>
+
+                    <fieldset>
+                        <legend>Selecciona los cursos de tu interés:</legend>
+                        <label><input type="checkbox" value="Curso de HTML" class="curso-interes"> Curso de
+                            HTML</label><br>
+                        <label><input type="checkbox" value="Curso de CSS" class="curso-interes"> Curso de
+                            CSS</label><br>
+                        <label><input type="checkbox" value="Curso de JavaScript" class="curso-interes"> Curso de
+                            JavaScript</label><br>
+                        <label><input type="checkbox" value="Curso de Python" class="curso-interes"> Curso de
+                            Python</label>
+                    </fieldset>
+
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
+        </div>
+        <section id="cursos">
+            <h2>Nuestros Cursos</h2>
+            <ul id="listaCursos"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Plataforma de Cursos en Línea</p>
+    </footer>
+    <script src="../Scripts/proyecto2.js"></script>
+</body>
+
+</html>
