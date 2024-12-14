@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Contacto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="title">
+                <h1>CONTÁCTENOS</h1>
+                <p>Ingrese su información y nos pondremos en contacto con usted muy pronto</p>
+            </div>
+                <div class="body_form">
+                    <div class="row_form">
+                        <label for="" class="label_form">Nombre:</label>
+                        <input type="text" class="input_form" id="name" onblur="validate()" placeholder="Escriba su nombre" >
+                    </div>
+                    <div class="row_form">
+                        <label for="" class="label_form">Apellido:</label>
+                        <input type="text" class="input_form" id="last_name" placeholder="Escriba su apellido" >
+                    </div>
+                    <div class="row_form">
+                        <label for="" class="label_form">Teléfono:</label>
+                        <input type="number" class="input_form" id="phone" placeholder="Escriba su teléfono" maxlength="10" minlength="10">
+                    </div>
+                    <div class="row_form">
+                        <label for="" class="label_form">E-mail:</label>
+                        <input type="email" class="input_form" id="email" placeholder="Escriba su correo electrónico" >
+                    </div>
+                    <div class="row_form">
+                        <label for="" class="label_form">Confirme su <br> E-mail:</label>
+                        <input type="email" class="input_form" id="email_two" placeholder="Confirme su correo electrónico" >
+                    </div>
+                    
+                    <div class="row_form">
+                        <button class="button_form" id="send" onclick="send_form()">Enviar</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../Scripts/form.js"></script>
+</body>
+</html>
